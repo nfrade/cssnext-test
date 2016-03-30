@@ -1,0 +1,8 @@
+/* TODO: Need a way to use var only if not defined yet */
+
+.title {
+  padding: 50px;
+  background: lightgrey;
+  color: var(--testColor);
+  font-size: 2rem;
+}

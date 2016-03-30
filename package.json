@@ -1,0 +1,19 @@
+{
+  "name": "cssnext_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev-fast": "vpack ./lib/index.js --package -p 8080 -o --template template.html --ignore-babel --no-info -c ./webpack.config.overide.js",
+    "dev": "vpack ./test/index.js --package -p 8080 -o --template template.html --no-info"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vigour-element": "^1.3.4",
+    "vigour-util": "^1.0.1"
+  },
+  "devDependencies": {
+    "postcss-loader": "^0.8.2"
+  }
+}
