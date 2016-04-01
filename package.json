@@ -6,7 +6,8 @@
   "scripts": {
     "dev-fast": "vpack ./lib/index.js --package -p 8080 -o --template template.html --ignore-babel --no-info -c ./webpack.config.overide.js",
     "dev": "vpack ./lib/index.js --package -p 8080 -o --template template.html --no-info -c ./webpack.config.overide.js",
-    "prebuild": "vpack build ./lib/index.js --output ./ --production --package --template template.html"
+    "prebuild": "vpack build ./lib/index.js --output ./ --production --package --template template.html",
+    "only-webpack": "webpack-dev-server --progress --colors"
   },
   "author": "",
   "license": "ISC",
