@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "dev-fast": "vpack ./lib/index.js --package -p 8080 -o --template template.html --ignore-babel --no-info -c ./webpack.config.overide.js",
-    "dev": "vpack ./test/index.js --package -p 8080 -o --template template.html --no-info"
+    "dev": "vpack ./lib/index.js --package -p 8080 -o --template template.html --no-info -c ./webpack.config.overide.js",
+    "prebuild": "vpack build ./lib/index.js --output ./ --production --package --template template.html"
   },
   "author": "",
   "license": "ISC",
