@@ -1,8 +1,12 @@
 /* TODO: Need a way to use var only if not defined yet */
+/* :root { */
+/*   --testColor: red; */
+/* } */
+/* @import "./global.css"; */
 
 .title {
   padding: 50px;
   background: lightgrey;
-  color: var(--testColor);
+  color: var(--testColor, blue);
   font-size: 2rem;
 }
